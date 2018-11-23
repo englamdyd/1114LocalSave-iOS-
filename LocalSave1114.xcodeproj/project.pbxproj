@@ -13,6 +13,7 @@
 		A467FFAB219BA735001D458E /* LocalSave1114.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A467FFA9219BA735001D458E /* LocalSave1114.xcdatamodeld */; };
 		A467FFAD219BA738001D458E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A467FFAC219BA738001D458E /* Assets.xcassets */; };
 		A467FFB0219BA738001D458E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A467FFAE219BA738001D458E /* LaunchScreen.storyboard */; };
+		A467FFD2219BB6FA001D458E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A467FFD1219BB6FA001D458E /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +25,28 @@
 		A467FFAC219BA738001D458E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A467FFAF219BA738001D458E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A467FFB1219BA738001D458E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A467FFBB219BB652001D458E /* SQLiteUse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteUse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A467FFD1219BB6FA001D458E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A467FFEA219BBE36001D458E /* SQLiteuseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteuseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A467FF9C219BA734001D458E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A467FFD2219BB6FA001D458E /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A467FFB8219BB652001D458E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A467FFE7219BBE36001D458E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			children = (
 				A467FFA1219BA734001D458E /* LocalSave1114 */,
 				A467FFA0219BA734001D458E /* Products */,
+				A467FFD0219BB6FA001D458E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				A467FF9F219BA734001D458E /* LocalSave1114.app */,
+				A467FFBB219BB652001D458E /* SQLiteUse.app */,
+				A467FFEA219BBE36001D458E /* SQLiteuseTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,14 @@
 				A467FFA9219BA735001D458E /* LocalSave1114.xcdatamodeld */,
 			);
 			path = LocalSave1114;
+			sourceTree = "<group>";
+		};
+		A467FFD0219BB6FA001D458E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A467FFD1219BB6FA001D458E /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,40 @@
 			productReference = A467FF9F219BA734001D458E /* LocalSave1114.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A467FFBA219BB652001D458E /* SQLiteUse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A467FFCF219BB659001D458E /* Build configuration list for PBXNativeTarget "SQLiteUse" */;
+			buildPhases = (
+				A467FFB7219BB652001D458E /* Sources */,
+				A467FFB8219BB652001D458E /* Frameworks */,
+				A467FFB9219BB652001D458E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLiteUse;
+			productName = SQLiteUse;
+			productReference = A467FFBB219BB652001D458E /* SQLiteUse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A467FFE9219BBE36001D458E /* SQLiteuseTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A467FFFC219BBE38001D458E /* Build configuration list for PBXNativeTarget "SQLiteuseTest" */;
+			buildPhases = (
+				A467FFE6219BBE36001D458E /* Sources */,
+				A467FFE7219BBE36001D458E /* Frameworks */,
+				A467FFE8219BBE36001D458E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLiteuseTest;
+			productName = SQLiteuseTest;
+			productReference = A467FFEA219BBE36001D458E /* SQLiteuseTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +163,14 @@
 				TargetAttributes = {
 					A467FF9E219BA734001D458E = {
 						CreatedOnToolsVersion = 9.4;
+					};
+					A467FFBA219BB652001D458E = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+					A467FFE9219BBE36001D458E = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -116,6 +188,8 @@
 			projectRoot = "";
 			targets = (
 				A467FF9E219BA734001D458E /* LocalSave1114 */,
+				A467FFBA219BB652001D458E /* SQLiteUse */,
+				A467FFE9219BBE36001D458E /* SQLiteuseTest */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +205,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A467FFB9219BB652001D458E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A467FFE8219BBE36001D458E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,6 +229,20 @@
 				A467FFA5219BA735001D458E /* ViewController.swift in Sources */,
 				A467FFA3219BA734001D458E /* AppDelegate.swift in Sources */,
 				A467FFAB219BA735001D458E /* LocalSave1114.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A467FFB7219BB652001D458E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A467FFE6219BBE36001D458E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +416,84 @@
 			};
 			name = Release;
 		};
+		A467FFCD219BB659001D458E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SQLiteUse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.pilot.lyb.SQLiteUse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteUse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A467FFCE219BB659001D458E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SQLiteUse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.pilot.lyb.SQLiteUse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteUse-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A467FFFD219BBE38001D458E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SQLiteuseTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.pilot.lyb.SQLiteuseTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteuseTest/SQLiteuseTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A467FFFE219BBE38001D458E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SQLiteuseTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.pilot.lyb.SQLiteuseTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteuseTest/SQLiteuseTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +511,24 @@
 			buildConfigurations = (
 				A467FFB5219BA738001D458E /* Debug */,
 				A467FFB6219BA738001D458E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A467FFCF219BB659001D458E /* Build configuration list for PBXNativeTarget "SQLiteUse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A467FFCD219BB659001D458E /* Debug */,
+				A467FFCE219BB659001D458E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A467FFFC219BBE38001D458E /* Build configuration list for PBXNativeTarget "SQLiteuseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A467FFFD219BBE38001D458E /* Debug */,
+				A467FFFE219BBE38001D458E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
